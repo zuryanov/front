@@ -1,0 +1,60 @@
+<div class="row mb-4">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header card-header-warning">
+        <h4 class="card-title">Tasks</h4>
+        <p class="card-category">My tasks</p>
+      </div>
+      <div class="card-body px-0 pb-2">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead class="text-warning">
+            <tr>
+              <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID</th>
+              <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Название</th>
+              <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Категория</th>
+              <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Приоритет</th>
+              <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Статус</th>
+              <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Дата</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let task of tasks">
+              <td>
+                <div class="d-flex px-2 py-1">
+                  <div class="d-flex flex-column justify-content-center">
+                    <h6 class="mb-0 text-sm">{{task.id}}</h6>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="avatar-group mt-2">
+                  {{task.title}}
+                </div>
+              </td>
+<!--              <td class="align-middle text-center text-sm">-->
+<!--                <span class="text-xs font-weight-bold"> {{task.category.title.toString()}}</span>-->
+<!--              </td>-->
+<!--              <td class="align-middle">-->
+<!--                <div class="progress-wrapper w-75 mx-auto">-->
+<!--                  <span class="text-xs font-weight-bold">{{task.priority.title.toString()}}</span>-->
+<!--                </div>-->
+<!--              </td>-->
+<!--              <td class="align-middle">-->
+<!--                <div class="progress-wrapper w-75 mx-auto">-->
+<!--                  <span class="text-xs font-weight-bold">{{task.completed}}</span>-->
+<!--                </div>-->
+<!--              </td>-->
+<!--              <td class="align-middle">-->
+<!--                <div class="progress-wrapper w-75 mx-auto">-->
+<!--                  <span class="text-xs font-weight-bold">{{task.date}}</span>-->
+<!--                </div>-->
+<!--              </td>-->
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
