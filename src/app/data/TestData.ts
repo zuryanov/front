@@ -59,7 +59,7 @@ export class TestData {
     {
       id: 5,
       title: 'Вкусно покушать',
-      completed: false,
+      completed: true,
       priority: TestData.priorities[3],
       category: TestData.categories[7],
       date: new Date('2022-10-13')
@@ -67,7 +67,7 @@ export class TestData {
     {
       id: 6,
       title: 'Сладко поспать',
-      completed: false,
+      completed: true,
       priority: TestData.priorities[2],
       category: TestData.categories[4],
       date: new Date('2022-10-15')
